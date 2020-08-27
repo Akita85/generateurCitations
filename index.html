@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Pierre l'Aristotron - le générateur de Citations</title>
+  <link rel="icon" href="img/Fevicon.png" type="image/png">
+  
+    <!-- CSS -->
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  
+   <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  	<!-- Bannière Start -->
+
+    <section class="container-fluid hero-banner hero-banner-sm">
+
+    	<div class="col-md-12 text-lg-center">
+      		<h1>PIERRE L'ARISTOTRON</h1>
+      		<h2>Quand Pierre Desproges rencontre Aristote</h2>
+    	</div>
+
+ 	  </section>
+
+  	<!-- Bannière Start -->
+
+  <div class="container">
+    
+    <!-- Citations Aléatoires Start -->
+
+	<section class="citations_aleatoires">
+
+  		<div class="col-md-12 text-lg-center">
+        <img class="displayed" src="img/Aristote et PDesproges.png" alt="image">
+    		<h4>Discours absurdes de Pierre Desproges et Aristote</h4>
+      </div>
+      <div class="col-md-12 text-lg-center">
+    		<button class="btn btn-secondary générerCitation">Donnez la parole à Pierre l'Aristotron</button>
+        <button class="btn btn-secondary arrêt">Arrêter</button>
+  		</div>
+  		<div class="col-md-12 text-lg-center">
+    		<p class="citations"></p>
+  		</div>
+
+	</section>
+
+  <!-- Citations Aléatoires End -->
+
+ 	<!-- Citations configurables Start -->
+
+	<section class="citations_configurables jumbotron">
+
+      	<div class="form-group col-md-12">
+        	<label for="exampleFormControlSelect1">
+          	<h4>Citation(s) confuse(s) :</h4></label>
+            <select class="form-control col-md-4" id="sélectionnerAuteur">
+                <option value="Aristote">d'Aristote </option>
+                <option value="Desproges">de Pierre Desproges</option>
+            </select>
+      	</div>  
+
+
+    	<h4 class="col-md-12"> Combien de citations voulez-vous ?</h4>
+    	<div class="col-md-12">
+        	<div class="form-check form-check-inline">
+          		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1" checked>
+          		<label class="form-check-label" for="inlineRadio1">1</label>
+        	</div>
+        	<div class="form-check form-check-inline">
+          		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2" required>
+          		<label class="form-check-label" for="inlineRadio2">2</label>
+        	</div>
+        	<div class="form-check form-check-inline">
+          		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3" required>
+          		<label class="form-check-label" for="inlineRadio3">3</label>
+       		</div>
+        	<div class="form-check form-check-inline">
+          		<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="4" required>
+          		<label class="form-check-label" for="inlineRadio3">4</label>
+        	</div>
+        	<div class="form-check form-check-inline">
+         		 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="5" required>
+          	 <label class="form-check-label" for="inlineRadio3">5</label>
+        	</div>
+    	</div>
+    	<div class="col-md-12 text-lg-center">	
+      		<button type="button" class="btn btn-secondary BoutonGenerer">Générer</button> 
+      		<button type="button" class="btn btn-secondary BoutonArrêt">Arrêter</button>
+    	</div>	
+      
+      <div class="col-md-12 text-lg-center" id="citationsBlock"><img class="photoAuteur" src="img/Aristote et PDesproges.png" id="photo_Auteur"></div>
+
+	</section>
+
+  </div>
+
+ 	<!-- Citations configurables End -->
+
+ 	<!-- footer Start -->
+
+	<footer class="footer-area">
+    <div class="container">
+      <div class="row">
+        <p class="col-lg-10 col-sm-12 footer-text m-0 text-center text-lg-left">
+          Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits réservés | Template réalisé par <a href="#" target="_blank">Audrey François (Openclassroom / projet 5)</a></p>
+      </div>
+    </div>
+  </footer>
+
+ 	<!-- footer End -->
+
+ 	<!-- scripts JS Start -->
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/GenerateManyQuote.js"></script>
+
+ 	<!-- scripts JS End -->
+
+	</body>
+</html>
